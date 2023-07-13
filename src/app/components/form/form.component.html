@@ -18,7 +18,7 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <label class="form-label pb-1 labels" for="exampleFormControlInput1">Empresa: </label>
+                        <label class="form-label pb-1 labels" for="exampleFormControlInput2">Empresa: </label>
                         <input class="form-control inputs" type="text" name="company" id="exampleFormControlInput2"
                          required #company="ngModel" [(ngModel)]="forms.company" placeholder="Insira o nome da empresa">
                         
@@ -31,8 +31,8 @@
                 </div>
                 <div class="col-lg-8 col-md-8 col-11 d-lg-flex flex-lg-row justify-content-lg-around">
                     <div class="col-lg-5">
-                        <label class="form-label pb-1 labels" for="exampleFormControlInput1">Email para resposta: </label>
-                        <input class="form-control inputs" type="text" name="email" id="exampleFormControlInput1"
+                        <label class="form-label pb-1 labels" for="exampleFormControlInput3">Email para resposta: </label>
+                        <input class="form-control inputs" type="text" name="email" id="exampleFormControlInput3"
                          required #email="ngModel" [(ngModel)]="forms.email" placeholder="Insira o email para resposta">
 
                         <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert">
@@ -42,8 +42,8 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <label class="form-label pb-1 labels" for="exampleFormControlInput1">Motivo do chamado: </label>
-                        <input class="form-control inputs" type="text" name="subject" id="exampleFormControlInput1"
+                        <label class="form-label pb-1 labels" for="exampleFormControlInput4">Motivo do chamado: </label>
+                        <input class="form-control inputs" type="text" name="subject" id="exampleFormControlInput4"
                          required #subject="ngModel" [(ngModel)]="forms.subject" placeholder="  Insira o motivo">
 
                         <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="alert">
