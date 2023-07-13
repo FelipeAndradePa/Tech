@@ -1,0 +1,129 @@
+.redes {
+    padding-top: 192px;
+}
+.lined::after {
+    content: ''; /*conteúdo vazio*/
+    display: block;
+    background-color: #FF3D00;
+    height: 5px;
+    width: 24%;
+    margin-top: 0px;
+}
+.title {
+    margin-bottom: 0;
+    font-size: 49px;
+    font-family: 'Bree Serif';
+    font-weight: 700;
+    color:#212121;
+}
+.content {
+    margin-top: 55px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.cardBenefs {
+    background-color: #0f2441;
+    border-radius: 18px;
+    color: #FAFAFA;
+    padding-bottom: 68px;
+}
+.linedMain::after {
+    content: ''; /*conteúdo vazio*/
+    display: block;
+    background-color: #4FC3F7;
+    height: 5px;
+    width: 40%;
+    margin-top: -6px;
+    border-radius: 10px;
+}
+.titleMain {
+    font-size: 38px;
+    color: #29B6F6;
+}
+.titlesBenefs {
+    font-size: 36px;
+}
+.contentBenefs {
+    text-align: center;
+    margin-top: 21px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.frames {
+    margin-top: 75px;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+.frames:hover {
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+li {
+    list-style: none;
+}
+li::before {
+    content: '•';
+    display: inline-block;
+    color:#0f2441;
+    margin-right: 5px;
+    font-size: 23px;
+}
+.image {
+    padding-top: 80px;
+}
+.siz {
+    height: 320px;
+}
+.organization {
+    margin-top: 54px;
+}
+@media (min-width: 561.02px) and (max-width: 768px) {
+    .linedMain::after {
+        width: 70%;
+        margin-left: 95px;
+    }
+    .lined::after {
+        width: 45%;
+    }
+    .siz {
+        height: 300px;
+    }
+}
+@media (max-width: 561px) {
+    .lined::after {
+        display: none;
+    }
+    .title {
+        text-align: center;
+    }
+    .image {
+        padding-top: 55px;
+    }
+    .linedMain::after {
+        display: none;
+    }
+    .titleMain {
+        text-align: center;
+    }
+    .divB {
+        display: none;
+    }
+    .organization {
+        margin-top: 0;
+    }
+    .siz {
+        height: 280px;
+    }
+}

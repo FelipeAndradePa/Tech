@@ -1,0 +1,136 @@
+.centrais {
+    padding-top: 195px;
+}
+.lined::after {
+    content: ''; /*conteúdo vazio*/
+    display: block;
+    background-color: #FF3D00;
+    height: 5px;
+    width: 24%;
+    margin-top: -6px;
+}
+.title {
+    margin-bottom: 0;
+    font-size: 49px;
+    font-family: 'Bree Serif';
+    font-weight: 700;
+    color:#212121;
+}
+.content {
+    margin-top: 55px;
+    font-size: 18px;
+    font-weight: 600;
+}
+#products {
+    color: #1B5E20;
+    text-decoration: none;
+}
+#products:hover {
+    color: #3ea843
+}
+.cardBenefs {
+    background-color: #1B5E20;
+    border-radius: 18px;
+    color: #FAFAFA;
+    padding-bottom: 58px;
+}
+.linedMain::after {
+    content: ''; /*conteúdo vazio*/
+    display: block;
+    background-color: #AED581;
+    height: 5px;
+    width: 28%;
+    margin-left: 460px;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.titleMain {
+    font-size: 38px;
+    color: #9CCC65;
+}
+.titlesBenefs {
+    font-size: 36px;
+}
+.contentBenefs {
+    margin-top: 21px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.frames {
+    margin-top: 75px;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+.frames:hover {
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+li {
+    list-style: none;
+}
+li::before {
+    content: '•';
+    display: inline-block;
+    color: #1B5E20;
+    margin-right: 5px;
+    font-size: 23px;
+}
+.quality {
+    margin-top: 80px;
+}
+.image {
+    padding-top: 80px;
+}
+.siz {
+    height: 320px;
+}
+@media (min-width: 561.02px) and (max-width: 768px) {
+    .linedMain::after {
+        width: 70%;
+        margin-left: 95px;
+    }
+    .lined::after {
+        width: 45%;
+    }
+    .siz {
+        height: 300px;
+    }
+}
+@media (max-width: 561px) {
+    .lined::after {
+        display: none;
+    }
+    .title {
+        text-align: center;
+    }
+    .image {
+        padding-top: 55px;
+    }
+    .linedMain::after {
+        display: none;
+    }
+    .titleMain {
+        text-align: center;
+    }
+    .divB {
+        display: none;
+    }
+    .organization {
+        margin-top: 0;
+    }
+    .siz {
+        height: 280px;
+    }
+}

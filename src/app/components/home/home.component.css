@@ -1,0 +1,288 @@
+.carousel-item {
+    height: 510px;
+    padding-top: 97px;
+}
+.d-block {
+    width: 100%;
+    height: 100%;
+}
+.titulo {
+    text-align: center;
+    padding-top: 95px;
+    font-size: 49px;
+    font-family: 'Bree Serif';
+    font-weight: 700;
+    color:#212121;
+}
+.lined::after {
+    content: ''; /*conteúdo vazio*/
+    display: block;
+    background-color: #FF3D00;
+    height: 5px;
+    width: 17%;
+    margin-top: -6px;
+    margin-bottom: 65px;
+    border-radius: 10px;
+}
+.cards {
+    border-radius: 18px;
+    color: white;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+.cards:hover{
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+.cardFirstBlue {
+    box-shadow: 6px 6px 5px #0f2441;
+    background-color: #193761;
+    border-color: #193761;
+}
+.cardFirstGreen {
+    box-shadow: 6px 6px 5px #1B5E20;
+    background-color: #2E7D32;
+    border-color: #2E7D32;
+}
+.cardFirstRed {
+    box-shadow: 6px 6px 5px #B71C1C;
+    background-color: #C62828;
+    border-color: #C62828;
+}
+.box {
+    border-radius: 16px 16px 0px 0px;
+    color: #EEEEEE;
+    font-size: 21px;
+}
+.box-maior {
+    border-radius: 0px 0px 16px 16px;
+    font-size: 19px;
+}
+.visit {
+    font-size: 17px;
+    border-radius: 6px;
+    border: none;
+    height: 40px;
+    visibility: hidden;
+}
+.visitBlue {
+    background-color: #BBDEFB;
+}
+.visitBlue:hover {
+    color: white;
+    background-color: #90CAF9;
+}
+.visitGreen {
+    background-color: #C8E6C9;
+}
+.visitGreen:hover {
+    color: white;
+    background-color: #A5D6A7;
+}
+.visitRed {
+    background-color: #FFCDD2;
+}
+.visitRed:hover {
+    color: white;
+    background-color: #EF9A9A;
+}
+.cards:hover button {
+    visibility: visible;
+}
+.cardSecond {
+    background-color: #193761;
+    border: solid;
+    border-width: 2px;
+    border-color: #0f2441;
+    border-radius: 18px;
+    margin-top: 42px;
+    box-shadow: 6px 6px 5px #0f2441;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+.buttonsOp {
+    background-color: #FF3D00;
+    color: white;
+    border: none;
+    border-radius: 0px 6px 6px 0px;
+    font-size: 16px;
+    font-weight: 600;
+    height: 35px;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+.buttonsOp:hover {
+    background-color: #F4511E;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+.divText{
+    color: white;
+    margin-left: 100px;
+    font-weight: 600;
+}
+.imgMini {
+    width: 100%;
+    border-radius: 16px 0px 0px 16px;
+}
+.divMiniMobile, .imgMiniMobile {
+    display: none;
+}
+.none {
+    display: none;
+}
+.block {
+    display: block;
+}
+.imgEf,.imgAt, .imgCre {
+    background-color: #64B5F6;
+    border-radius: 100%;
+    width: 83px;
+    padding: 9px;
+    margin-top: 7px;
+}
+.bi {
+    font-size: 16px;
+}
+.textCards {
+    display: block;
+    font-weight: 600;
+}
+.why {
+    width: 300px;
+    font-weight: 600;
+}
+.backCards {
+    border-radius: 18px;
+    margin-bottom: 50px;
+    background-color: #EEEEEE;
+}
+.opsMobile {
+    display: none;
+    margin-left: 35px;
+    margin-top: 32px;
+}
+.buttonsOpMobile {
+    display: none;
+    background-color: #FF3D00;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    height: 38px;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+.buttonsOpMobile:hover {
+    background-color: #F4511E;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+.titleDinamic {
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+.contentDinamic {
+    box-sizing: border-box;
+}
+@media (min-width: 561.02px) and (max-width: 768px) {
+    .buttonsOp, .opsDekstop {
+        display: none;
+    }
+    .buttonsOpMobile, .opsMobile {
+        display: block;
+    }
+    .imgMini {
+        display: none;
+    }
+    .divMiniMobile {
+        display: block;
+    }
+    .imgMiniMobile {
+        width: 100%;
+        display: block;
+        border-radius: 16px 16px 0px 0px;
+    }
+}
+@media (max-width: 561px) {
+    .carousel-item {
+        height: 370px;
+    }
+    .titulo {
+        font-size: 38px;
+    }
+    .imgMini {
+        display: none;
+    }
+    .divText {
+        margin-left: 40px;
+    }
+    .titleDinamic {
+        margin-left: 35px;
+    }
+    .divMiniMobile {
+        display: block;
+    }
+    .imgMiniMobile {
+        width: 100%;
+        display: block;
+        border-radius: 16px 16px 0px 0px;
+    }
+    .buttonsOp, .opsDekstop {
+        display: none;
+    }
+    .buttonsOpMobile, .opsMobile {
+        display: block;
+    }
+    .imgCre {
+        margin-top: 35px;
+    }
+    .lined::after {
+        display: none;
+    }
+}

@@ -1,0 +1,127 @@
+.cfs {
+    padding-top: 195px;
+}
+.lined::after {
+    content: ''; /*conteúdo vazio*/
+    display: block;
+    background-color: #FF3D00;
+    height: 5px;
+    width: 5%;
+    margin-top: -6px;
+}
+.title {
+    margin-bottom: 0;
+    font-size: 49px;
+    font-family: 'Bree Serif';
+    font-weight: 700;
+    color:#212121;
+}
+.content {
+    margin-top: 55px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.imageCFTV {
+    padding-left: 115px; 
+    padding-top: 80px;
+}
+.cardBenefs {
+    background-color: #B71C1C;
+    border-radius: 18px;
+    color: #FAFAFA;
+    padding-bottom: 68px;
+}
+.titlesBenefs {
+    font-size: 36px;
+}
+.contentBenefs {
+    margin-top: 21px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.linedMain::after {
+    content: ''; /*conteúdo vazio*/
+    display: block;
+    background-color: #EF9A9A;
+    height: 5px;
+    width: 35%;
+    margin-left: 415px;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.titleMain {
+    font-size: 38px;
+    color: #E57373;
+}
+.frames {
+    margin-top: 75px;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+.frames:hover {
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+li {
+    list-style: none;
+}
+li::before {
+    content: '•';
+    display: inline-block;
+    color:#B71C1C;
+    margin-right: 5px;
+    font-size: 23px;
+}
+.siz {
+    height: 320px;
+}
+@media (min-width: 561.02px) and (max-width: 768px) {
+    .linedMain::after {
+        width: 70%;
+        margin-left: 95px;
+    }
+    .lined::after {
+        width: 10%;
+    }
+    .siz {
+        height: 300px;
+    }
+}
+@media (max-width: 561px) {
+    .lined::after {
+        display: none;
+    }
+    .title {
+        text-align: center;
+    }
+    .image {
+        padding-top: 55px;
+    }
+    .linedMain::after {
+        display: none;
+    }
+    .titleMain {
+        text-align: center;
+    }
+    .divB {
+        display: none;
+    }
+    .organization {
+        margin-top: 0;
+    }
+    .siz {
+        height: 280px;
+    }
+}

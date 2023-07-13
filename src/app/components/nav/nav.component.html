@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"> 
+
+
+<div>
+    <div class="container-md d-flex flex-column align-items-center">
+      <div class="navbar-light navigation fixed-top navbar navbar-expand-lg ">
+        <a class=" logo navbar-brand" routerLink="/">
+          <img src="../../../assets/logo.png" alt="Techline" width="170" height="64">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class=" home nav-link active" aria-current="page" routerLink="/" style="font-weight: 600;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class=" business nav-link active" routerLink="/business" style="font-weight: 600;">Empresa</a>
+            </li>
+            <li class="nav-item">
+              <a class=" callManager nav-link active" routerLink="/product" style="font-weight: 600;">Call Manager</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a style="font-weight: 600;" class="services nav-link active dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Serviços
+              </a>
+              <ul class="dropdown-menu " aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class=" centrais dropdown-item" routerLink="/centrais" style="font-weight: 600;">Centrais telefônicas IP</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class=" redes dropdown-item" routerLink="/redes" style="font-weight: 600;">Redes estruturadas</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class=" CFTV dropdown-item" routerLink="/CFTV" style="font-weight: 600;">CFTV</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class=" support nav-link active" routerLink="/support" style="font-weight: 600;">Suporte</a>
+            </li>
+            <li class="nav-item">
+              <a class=" downloads nav-link active" routerLink="/downloads" style="font-weight: 600;">Downloads</a>
+            </li>
+          </ul>
+          <button class=" buttonContactUs btn"> 
+             <a routerLink="contactUs" class="link">Fale Conosco</a>
+          </button>  
+      </div>
+    </div>
+    <div class="route">
+      <router-outlet></router-outlet>
+    </div>
+</div>

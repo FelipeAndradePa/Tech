@@ -1,0 +1,26 @@
+<div class="main">
+    <div class="container-card container-md d-flex flex-column align-items-center">
+        <div class="cardLogin card col-lg-11 col-md-10 col-11">
+            <h2 class="text-center mt-3">Autenticação de segurança</h2>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label class="mb-2" for="exampleInputEmail1">Login:</label>
+                        <input type="text" class="mb-2 formBorder form-control" name="login" id="login"
+                            [(ngModel)]="login.user" placeholder="Insira o login">
+                    </div>
+                    <div class="form-group">
+                        <label class="mb-2 mt-3" for="exampleInputPassword1">Senha:</label>
+                        <input type="password" class="mb-2 formBorder form-control" name="senha" id="senha"
+                            [(ngModel)]="login.password" placeholder="Insira a senha">
+                    </div>
+                    <div class="col-12 d-flex flex-row justify-content-center mt-5 mb-3">
+                        <button (click)="consultLogin()" class="col-lg-2 col-md-4 col-8 access btn" type="button" id="entrar"name="entrar">
+                            Acessar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

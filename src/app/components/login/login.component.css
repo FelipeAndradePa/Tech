@@ -1,0 +1,30 @@
+.main {
+    background-color: #fbfbff;
+}
+.container-card {
+    padding-top: 232px;
+    padding-bottom: 232px;
+}
+.formBorder {
+    background-color: #F0F0F0;
+}
+.cardLogin {
+    border-radius: 20px;
+    color: #F0F0F0;
+    background-color: #212121;
+}
+.access {
+    border-radius: 6px;
+    border: none;
+    background-color: #29B6F6;
+    font-size: 18px;
+    color: black;
+    font-weight: 700;
+    height: 45px;
+}
+.formBorder {
+    border-color: black;
+}
+.access:hover {
+    color: white;
+}

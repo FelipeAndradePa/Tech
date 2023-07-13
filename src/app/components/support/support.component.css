@@ -1,0 +1,103 @@
+.main {
+    padding-top: 172px;
+}
+.titulo {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 49px;
+    font-family: 'Bree Serif';
+    font-weight: 700;
+    color:#212121;
+}
+.card {
+    border-color: #157ae1;
+}
+.card-header{
+    background-color: #157ae1;
+}
+.content {
+    margin-bottom: 75px;
+}
+.text {
+    font-size: 18px;
+}
+.lined::after {
+    content: ''; /*conteúdo vazio*/
+    display: block;
+    background-color: #FF3D00;
+    height: 5px;
+    width: 20%;
+    margin-top: -6px;
+    margin-bottom: 65px;
+    border-radius: 10px;
+}
+.tel-fix {
+    color:#0277BD;
+}
+.tel-wpp {
+    color:#0277BD;
+}
+.email {
+    color:#0277BD;
+}
+.image {
+    width: 400px;
+    margin-top: 20px;
+}
+.contactCard {
+    width: 690px;
+    margin-top: 28px;
+    margin-bottom: 37px;
+    background-color: #fbfbff;
+}
+.chamado {
+    border-radius: 6px;
+    border: none;
+    width: 140px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 250px;
+    background-color: #FF5722;
+}
+.chamado:hover{
+    color: white;
+}
+@media (min-width: 561.02px) and (max-width: 768px) {
+    .lined::after {
+        margin-left: 210px;
+        width: 40%;
+    }
+    .contactCard {
+        width: 630px;
+    }
+    .image {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 561px) {
+
+    .lined::after {
+        display: none;
+    }
+    .titulo {
+        text-align: center;
+    }
+    .contactCard {
+        width: 320px;
+    }
+    .tel-wpp {
+        margin-top: 5px;
+    }
+    .email {
+        margin-top: 5px;
+    }
+    .chamado {
+        margin-top: 22px;
+        margin-left: 100px;
+    }
+    .image {
+        width: 320px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

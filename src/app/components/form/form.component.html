@@ -1,0 +1,77 @@
+<div style="background-color: #fbfbff;">
+    <div class="bg">
+        <div class="pb-3 container-md">
+            <div class="d-flex flex-column align-items-center">
+                <div class="pt-5 lined col-md-12 d-flex flex-column align-items-center">
+                    <h1 class="title text-center">Formulário para abertura de chamados</h1>
+                </div>
+                <div class="col-lg-8 col-md-8 col-11 d-lg-flex flex-lg-row justify-content-lg-around">
+                    <div class="col-lg-5">
+                        <label class="form-label pb-1 labels" for="exampleFormControlInput1">Nome do solicitante: </label>
+                        <input class="form-control inputs" type="text" name="name" id="exampleFormControlInput1" 
+                         required #name="ngModel" [(ngModel)]="forms.name" placeholder="Insira o seu nome">
+
+                        <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert">
+                            <div *ngIf="name.errors?.['required']">
+                                O nome do solicitante é obrigatório
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <label class="form-label pb-1 labels" for="exampleFormControlInput1">Empresa: </label>
+                        <input class="form-control inputs" type="text" name="company" id="exampleFormControlInput2"
+                         required #company="ngModel" [(ngModel)]="forms.company" placeholder="Insira o nome da empresa">
+                        
+                        <div *ngIf="company.invalid && (company.dirty || company.touched)" class="alert">
+                            <div *ngIf="company.errors?.['required']">
+                                O nome da empresa é obrigatório
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-11 d-lg-flex flex-lg-row justify-content-lg-around">
+                    <div class="col-lg-5">
+                        <label class="form-label pb-1 labels" for="exampleFormControlInput1">Email para resposta: </label>
+                        <input class="form-control inputs" type="text" name="email" id="exampleFormControlInput1"
+                         required #email="ngModel" [(ngModel)]="forms.email" placeholder="Insira o email para resposta">
+
+                        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert">
+                            <div *ngIf="email.errors?.['required']">
+                                O email é obrigatório
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <label class="form-label pb-1 labels" for="exampleFormControlInput1">Motivo do chamado: </label>
+                        <input class="form-control inputs" type="text" name="subject" id="exampleFormControlInput1"
+                         required #subject="ngModel" [(ngModel)]="forms.subject" placeholder="  Insira o motivo">
+
+                        <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="alert">
+                            <div *ngIf="subject.errors?.['required']">
+                                O assunto é obrigatório
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-11 d-lg-flex flex-lg-row justify-content-lg-around">
+                    <div class="col-lg-11">
+                        <label for="exampleFormControlTextarea1" class="labels form-label">Descreva a situação: </label>
+                        <textarea class="textArea formBorder form-control" 
+                              id="exampleFormControlTextarea1" rows="6" name="help" required #help="ngModel" [(ngModel)]="forms.help" 
+                              placeholder="Descrição do problema"></textarea>
+
+                        <div *ngIf="help.invalid && (help.dirty || help.touched)" class="alert">
+                            <div *ngIf="help.errors?.['required']">
+                                Campo obrigatório
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-5 col-lg-4 col-md-5 col-11 pb-4 d-flex flex-row justify-content-center">
+                    <button (click)="sendCall()" type="button" class="p-2 but text-center col-lg-4 col-md-7 col-10">Enviar Chamado</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

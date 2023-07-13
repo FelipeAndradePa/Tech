@@ -1,0 +1,116 @@
+.preFooter {
+    background-color: #0a172b;
+    color: white;
+}
+.footer {
+    background-color: #212121;
+}
+.msg {
+    margin-right: 7px;
+    margin-left: 7px;
+}
+.titulo {
+    font-size: 40px;
+}
+.icon {
+    margin-right: 25px;
+}
+.buttonContactUs {
+    margin-top: 30px;
+    margin-left: 150px;
+    border-radius: 6px;
+    border: none;
+    font-size: 17px;
+    font-weight: 700;
+    height: 45px;
+    background-color: #FF5722;;
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
+.link:hover {
+    color: white;
+}
+.doContact {
+    padding-top: 58px;
+}
+.doContactImg {
+    width: 100px;
+    background-color: #EEEEEE;
+    border-radius: 100%;
+}
+.doContactText {
+    font-size: 17px;
+    margin-left: 50px;
+}
+.doContactInsta {
+    margin-top: 25px;
+    font-size: 17px;
+}
+.lined::after {
+    content: ''; /*conteúdo vazio*/
+    display: block;
+    background-color: #FF3D00;
+    height: 5px;
+    width: 40%;
+    margin-top: -6px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+.ops {
+    text-decoration: none;
+    color: white;
+}
+.download , .call, .service {
+    margin-top: 45px;
+}
+.ops:hover {
+    color: #e0e0e071;
+}
+.optionsText {
+    margin-top: 75px;
+}
+@media (min-width: 561.02px) and (max-width: 768px) {
+    .buttonContactUs {
+        margin-left: 110px;
+    }
+    .lined::after {
+        margin-left: 181px;
+    }
+    .doContactInsta {
+        margin-left: 57px;
+        margin-top: 25px;
+    }
+    .optionsText {
+        margin-left: 55px;
+    }
+}
+@media (max-width: 561px){
+    .doContactText {
+        font-size: 15px;
+        margin-left: 0px;
+    }
+    .lined::after {
+        display: none;
+    }
+    .titulo {
+        text-align: center;
+    }
+    .doContactImg {
+        margin-left: 78px;
+        margin-bottom: 20px;
+    }
+    .doContactInsta {
+        text-align: center;
+    }
+    .buttonContactUs {
+        margin-left: 0px;
+    }
+    .icon {
+        margin-right: 0px;
+    }
+    .optionsText {
+        margin-left: 8px;
+    }
+}

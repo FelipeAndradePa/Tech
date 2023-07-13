@@ -1,0 +1,133 @@
+.cont {
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+.titulo {
+    margin-top: 72px;
+    margin-bottom: 0px;
+    font-size: 49px;
+    font-family: 'Bree Serif';
+    font-weight: 700;
+    color:#212121;
+}
+.lined:after {
+    content: ''; /*conteúdo vazio*/
+    display: block;
+    background-color: #FF3D00;
+    height: 5px;
+    width: 9%;
+    margin-top: -6px;
+    margin-bottom: 45px;
+    border-radius: 10px;
+}
+.textCard {
+    font-weight: 600;
+    color: white;
+    display: none;
+}
+.card:hover .textCard {
+    display: block;
+}
+.card3cx {
+    box-shadow: 5px 5px 8px #000000;
+    background-color: #212121;
+}
+.mudaBD1 {
+    background-image: url('../../../assets/3cx.png'); 
+    border-radius: 16px;
+}
+.card:hover .mudaBD1 {
+    background-image: url('../../../assets/ImageBlack.png');
+}
+.mudaBD2 {
+    background-image: url('../../../assets/teamviewer.png'); 
+    border-radius: 16px;
+}
+.card:hover .mudaBD2 {
+    background-image: url('../../../assets/imageBlue.png');
+}
+.mudaBD3 {
+    background-image: url('../../../assets/anydesk.png');
+    border-radius: 16px;
+}
+.card:hover .mudaBD3 {
+    background-image: url('../../../assets/imageRED.png');
+}
+.cardTeam {
+    box-shadow: 5px 5px 8px #0D47A1;
+    background-color: #1976D2;
+}
+.cardAny {
+    box-shadow: 5px 5px 8px #B71C1C;
+    background-color: #D32F2F;
+}
+.cardBord {
+    border-radius: 16px;
+    border: none;
+}
+.card-body {
+    height: 350px;
+    width: 200px;
+}
+.card {
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+.card:hover {
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+.link {
+    text-decoration: none;
+}
+.visit {
+    background-color: #ECEFF1;
+    margin-top: 50px;
+    margin-left: 35px;
+    border-radius: 6px;
+    border: none;
+    height: 40px;
+    display: none;
+}
+.card:hover button {
+    display: block;
+} 
+.button {
+    color: black;
+    border-radius: 6px;
+}
+.visit:hover {
+    color: white;
+}
+@media (min-width: 561.02px) and (max-width: 768px) {
+    .lined::after {
+        width: 20%;
+        margin-left: 280px;
+    }
+}
+@media (max-width: 561px) {
+    .cont {
+        padding-top: 100px;
+    }
+    .lined:after {
+        display: none;
+    }
+    .titulo {
+        margin-bottom: 45px;
+    }
+    .card {
+        margin-top: 20px;
+    }
+}

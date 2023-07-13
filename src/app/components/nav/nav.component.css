@@ -1,0 +1,103 @@
+.navigation{
+    background-color: #fbfbff;
+    border-color: #fbfbff;
+}
+.scrolled {
+    opacity: 0.8;
+}
+.invisible {
+    visibility: hidden;
+}
+.bg {
+    background-color: white;
+}
+.link {
+    text-decoration: none;
+    color: black;
+}
+.link:hover {
+    color: white;
+}
+.logo {
+    margin-left: 63px;
+    margin-right: 75px;
+    margin-top: 15px;
+}
+.home {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+}
+
+.home:hover, .business:hover, 
+.callManager:hover, .services:hover,
+.support:hover, .downloads:hover {
+    color: #BDBDBD;
+}
+.business {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+}
+.callManager {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+}
+.services {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+}
+.support {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+}
+.downloads {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+}
+.buttonContactUs {
+    margin-top: 15px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 700;
+    margin-right: 63px;
+    height: 45px;
+    width: 130px;
+    background-color: #FF5722;
+}
+@media (min-width: 561.02px) and (max-width: 768px) {
+    .logo {
+        margin-left: 27px;
+    }
+    .navbar-toggler {
+        margin-top: 18px;
+        margin-right: 12px;
+        border: none;
+    }
+    .buttonContactUs {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 561px) {
+    .logo {
+        margin-left: 11px;
+    }
+    .navbar-toggler {
+        margin-top: 7px;
+        margin-right: -2px;
+        border: none;
+    }
+    .buttonContactUs {
+        margin-left: 10px;
+    }
+}
