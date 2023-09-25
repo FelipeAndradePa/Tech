@@ -9,7 +9,7 @@
     $subject = $data->subject;
     $help = $data->help;
 
-    $connect = mysqli_connect('mysql08.redehost.com.br:3306','alexandre','2#a8X3uU?#'); //a conexão com o BD é feita aqui
+    $connect = mysqli_connect(,'alexandre','2#a8X3uU?#'); 
     $db = mysqli_select_db($connect, 'techline');
 
     $insert = "INSERT INTO chamados (name,company,email,assunto,help) VALUES ('$name', '$company', '$email', '$subject', '$help')";
