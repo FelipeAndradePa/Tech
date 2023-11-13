@@ -8,7 +8,7 @@
 }
 .titulo {
     text-align: center;
-    padding-top: 185px;
+    padding-top: 205px;
     font-size: 49px;
     font-family: 'Bree Serif';
     font-weight: 700;
@@ -27,25 +27,6 @@
 .cards {
     border-radius: 18px;
     color: white;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1);
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1);
-    transition: all 200ms ease-in;
-    transform: scale(1);
-}
-.cards:hover{
-    z-index: 2;
-    -webkit-transition: all 200ms ease-in;
-    -webkit-transform: scale(1.1);
-    -ms-transition: all 200ms ease-in;
-    -ms-transform: scale(1.1);
-    -moz-transition: all 200ms ease-in;
-    -moz-transform: scale(1.1);
-    transition: all 200ms ease-in;
-    transform: scale(1.1);
 }
 .cardFirstBlue {
     box-shadow: 6px 6px 5px #0f2441;
@@ -69,13 +50,13 @@
 }
 .box-maior {
     border-radius: 0px 0px 16px 16px;
-    font-size: 19px;
+    font-size: 16px;
 }
 .visit {
-    font-size: 17px;
+    font-size: 14px;
     border-radius: 6px;
     border: none;
-    height: 40px;
+    height: 37px;
     visibility: hidden;
 }
 .visitBlue {
