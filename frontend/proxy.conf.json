@@ -1,0 +1,7 @@
+{
+    "/api": {
+      "target": "http://seu-backend.com",
+      "secure": false
+    }
+  }
+  

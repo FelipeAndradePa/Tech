@@ -3,14 +3,13 @@ let connection = null  //variável de monitoramento para a existência de conex�
 
 async function connect() {
     //se não há conexão com o banco, uma conexão é criada
-    if(!connection){
-        const client = await mysql.createConnection({
-            host: process.env.host,
-            user: process.env.user,
-            password: process.env.password,
-            database: process.env.database,
-          });
-    }
+    
+    const client = await mysql.createConnection({
+            host: process.env.HOST,
+            user: process.env.USER,
+            password: process.env.PASSWORD,
+            database: process.env.DB,
+    });
 
     return client;
 }

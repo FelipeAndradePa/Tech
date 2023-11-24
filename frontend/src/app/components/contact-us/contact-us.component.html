@@ -1,0 +1,78 @@
+<div style="background-color: #fbfbff;">
+    <div class="cont container-md">
+        <div class="d-flex flex-column align-items-center">
+            <div class="lined col-md-12 d-flex flex-column align-items-center">
+                <h1 class="titulo">Envie uma mensagem</h1>
+            </div>
+            <div class="col-lg-8 col-md-11 col-11 d-lg-flex flex-lg-row justify-content-lg-around allForm">
+                <div class="mt-4 col-lg-5 col-12">
+                    <label for="exampleFormControlInput1" class="form-label">Nome:</label>
+                    <input type="email" class="formBorder form-control" 
+                           id="exampleFormControlInput1" name="name" required #name="ngModel" [(ngModel)]="messages.name" 
+                           placeholder="Nome do solicitante">
+
+                    <div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert">
+                        <div *ngIf="name.errors?.['required']">
+                            O nome do solicitante é obrigatório
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 col-lg-5 col-12">
+                    <label for="exampleFormControlInput2" class="form-label">Empresa:</label>
+                    <input type="email" class="formBorder form-control" 
+                           id="exampleFormControlInput2" name="company" required #company="ngModel" [(ngModel)]="messages.company" 
+                           placeholder="Nome da empresa">
+                    
+                    <div *ngIf="company.invalid && (company.dirty || company.touched)" class="alert">
+                        <div *ngIf="company.errors?.['required']">
+                            O nome da empresa é obrigatório
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-11 col-11 d-lg-flex flex-lg-row justify-content-lg-around">
+                <div class="mt-4 col-lg-5 col-12">
+                    <label for="exampleFormControlInput3" class="form-label">Email:</label>
+                    <input type="email" class="formBorder form-control" 
+                           id="exampleFormControlInput3" name="email" required #email="ngModel" [(ngModel)]="messages.email" 
+                           placeholder="Email para resposta">
+                    
+                    <div *ngIf="email.invalid && (email.dirty || email.touched)" class="alert">
+                        <div *ngIf="email.errors?.['required']">
+                            O email é obrigatório
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 col-lg-5 col-12">
+                    <label for="exampleFormControlInput4" class="form-label">Assunto:</label>
+                    <input type="email" class="formBorder form-control" 
+                           id="exampleFormControlInput4" name="subject" required #subject="ngModel" [(ngModel)]="messages.subject" 
+                           placeholder="Assunto a tratar">
+                    
+                    <div *ngIf="subject.invalid && (subject.dirty || subject.touched)" class="alert">
+                        <div *ngIf="subject.errors?.['required']">
+                            O assunto é obrigatório
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 col-lg-8 col-md-11 col-11 d-lg-flex flex-lg-row justify-content-lg-around allForm">
+                <div class="col-lg-11">
+                    <label for="exampleFormControlTextarea1" class="form-label">Em que podemos ajudar?</label>
+                    <textarea class="formBorder form-control" 
+                              id="exampleFormControlTextarea1" rows="4" name="help" required #help="ngModel" [(ngModel)]="messages.help" 
+                              placeholder="Descrição da mensagem"></textarea>
+                    
+                    <div *ngIf="help.invalid && (help.dirty || help.touched)" class="alert">
+                        <div *ngIf="help.errors?.['required']">
+                            Campo obrigatório
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-5 col-md-4 col-11 d-flex flex-row justify-content-center">
+                <button (click)="sendMessage()" type="button" class="mt-4 col-lg-4 col-md-7 col-10 button btn">Enviar</button>
+            </div>
+        </div>
+    </div>
+</div>
