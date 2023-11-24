@@ -9,8 +9,11 @@
 
 # dependencies
 /node_modules
+
+# folders and files
+../dist
 .env
-/app/services/loginService/login.php
+login.php
 # profiling files
 chrome-profiler-events*.json
 
