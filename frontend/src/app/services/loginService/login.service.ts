@@ -8,7 +8,7 @@ import { Login } from './login.model';
 })
 export class LoginService {
 
-  baseUrl = "http://techlinetelecom.com.br/log/login.php";
+  baseUrl = "http://techlinetelecom.com.br/log";
   constructor(private http: HttpClient) { }
 
   consult(login: Login): Observable<number> {

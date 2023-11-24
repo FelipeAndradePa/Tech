@@ -13,6 +13,8 @@
 # folders and files
 .env
 login.php
+form.php
+messages.php
 # profiling files
 chrome-profiler-events*.json
 

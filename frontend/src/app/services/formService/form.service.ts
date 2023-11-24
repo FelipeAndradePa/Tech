@@ -10,7 +10,7 @@ import { Form } from './form.model';
 })
 export class FormService {
 
-  baseUrl = '../../../../../backend/src/form';
+  baseUrl = 'http://techlinetelecom.com.br/log';
 
   Toast = Swal.mixin({
     toast: true,
